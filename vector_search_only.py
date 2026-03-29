@@ -58,9 +58,9 @@ my_vector_search_profile_name = "myHnswProfile"
 my_vectorizer_name = "myOpenAI"
 
 
-index_description = "Index for Frankie's Bakery Product catalog."
-search_indexer_skillset_description = "This is the skill set to vectorize data for Frankie's Bakery Product Catalog."
-indexer_description="Indexer for Frankie's Bakery Product Catalog"
+index_description = "Index"
+search_indexer_skillset_description = "This is the skill set to vectorize data"
+indexer_description="Indexer"
 
 ##################### CREATE SEARCH INDEX ########################################################################
 
@@ -121,7 +121,7 @@ print(f"{result.name} created or updated")
 
 # Create a data source 
 indexer_client = SearchIndexerClient(endpoint=AZURE_SEARCH_SERVICE, credential=credential)
-container = SearchIndexerDataContainer(name="frankies-bakery-product-catalog")
+container = SearchIndexerDataContainer(name="Indexer")
 data_source_connection = SearchIndexerDataSourceConnection(
     name=data_source_name,
     type="azureblob",

@@ -65,7 +65,7 @@ print(f"{result.name} created or updated")
 
 # Create a data source 
 indexer_client = SearchIndexerClient(endpoint=AZURE_SEARCH_SERVICE, credential=credential)
-container = SearchIndexerDataContainer(name="frankies-bakery-product-catalog")
+container = SearchIndexerDataContainer(name="ContainName")
 data_source_connection = SearchIndexerDataSourceConnection(
     name=data_source_name,
     type="azureblob",
